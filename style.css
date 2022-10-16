@@ -959,3 +959,13 @@ footer span a:hover {
 #adv{
   font-size: 50px;
 }
+
+@media(max-width:436px){
+  .skills .skills-content .column {
+    height:auto;
+    gap:10px;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+  }
+}
