@@ -24,6 +24,7 @@
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#experience" class="menu-btn">Experience</a></li>
                 <li><a href="#services" class="menu-btn">Education</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#project" class="menu-btn">Projects</a></li>
@@ -44,7 +45,8 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Raushan Kumar</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="images/Raushan_Kumar_Resume.pdf" target="_blank" download="raushan-kumar-resume">Resume</a>
+                <!-- <a href="images/Raushan_Kumar_Resume.pdf" target="_blank" download="raushan-kumar-resume">Download Resume</a> -->
+                <a href="images/Raushan_Kumar_Resume.pdf" target="_blank">Resume</a>
             </div>
         </div>
     </section>
@@ -67,10 +69,47 @@
                          A quick learner who can absorb new ideas and can
                          communicate them clearly and effectively.</p>
                     <!-- <a href="#">Download CV</a> -->
+
+                    <a href="images/Raushan_Kumar_Resume.pdf" target="_blank">View Resume</a>
+                    <a href="images/Raushan_Kumar_Resume.pdf" target="_blank" download="raushan-kumar-resume">Download Resume</a>
+                
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="separator"></div>
+
+    <!-- experience section start here -->
+    <section class="experience" id="experience">
+        <h2 class="title">Professional Experience</h2>
+        <div class="experience-item">
+          <div class="job-card">
+            <div class="logo-container">
+              <img src="https://assets-global.website-files.com/6317934b72d1344ee25173ef/637d0565e3a110392fad7041_Salesken-logo_Full%20Color-p-500.png" alt="Company Logo">
+            </div>
+            <div class="job-details">
+              <h3>SDE Intern</h3>
+              <p>03/2023 - 07/2023</p>
+              <h4>Roles and Responsibilities</h4>
+              <ul style="margin-left: 20px;">
+                <li>Developed APIs and implemented business logic to support core functionality.</li>
+                <li>Optimized SQL queries for efficient data retrieval and manipulation.</li>
+                <li>Integrated APIs with the front-end to ensure seamless functionality and user experience.</li>
+                <li>Conducted thorough debugging of code to identify and resolve issues for enhanced performance.</li>
+                <li>Utilized technologies such as Spring Boot, Microservices, Servlets, JSP, jQuery, and AJAX.</li>
+                <li>Worked with tools like Eclipse, Git, and GitHub for version control and collaborative development.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add more experience items as needed -->
+        </div>
+      </section>
+      
+      
+      
+      
+  
 
     <!-- services section start -->
     <section class="services" id="services">
@@ -162,10 +201,9 @@
                 </div>
                 <div class="column right">
                     <div class="skills-images">
-                        <iconify-icon icon="logos:html-5" width="100" height="100"></iconify-icon>
-                        <!-- <img src="/images/spring.svg" alt=""> -->
+                        <iconify-icon icon="skill-icons:angular-dark" width="100" height="100"></iconify-icon>
+                        <!-- <img src="/images/github.svg" alt=""> -->
                     </div>
-
                     <div class="skills-images">
                         <iconify-icon icon="fa:github-square" width="100" height="100"></iconify-icon>
                         <!-- <img src="/images/aws.svg" alt=""> -->
@@ -179,9 +217,10 @@
                     </div>
 
                     <div class="skills-images">
-                        <iconify-icon icon="teenyicons:netlify-outline" width="100" height="100"></iconify-icon>
-                        <!-- <img src="/images/github.svg" alt=""> -->
+                        <iconify-icon icon="logos:html-5" width="100" height="100"></iconify-icon>
+                        <!-- <img src="/images/spring.svg" alt=""> -->
                     </div>
+
 
                     <div class="skills-images">
                         <iconify-icon icon="vscode-icons:file-type-css" width="100" height="100"></iconify-icon>
@@ -312,14 +351,14 @@
         <h2 id="MyGithubCalander" style="text-align:center ;">My Github Calander</h2>
         <div style="width:95%;margin:auto;" class="calendar">
     
-    
+            <!-- <div class="github-stat" style="height: 100%;"> -->
+                <!-- <h4 class="mb-0" style="text-align: center;color: #000;">Saurav Kumar's contribution calendar</h4> -->
+                <img src="https://ghchart.rshah.org/raus376" alt="raus376" style="width: 100%;height: auto; margin-top: 5vh;color: green;"/>
+                <!-- <img src="https://activity-graph.herokuapp.com/calender?username=sauravugi&bg_color=ffffff&color=000080&line=138808&point=ff9933&area=true" -->
+            <!-- </div> -->
         </div>
     
-        <script>
-            GitHubCalendar(".calendar", "raus376");
-    
-            GitHubCalendar(".calendar", "raus376", { responsive: true });
-        </script>
+        
 </div>
         <!-- github calander ends here  -->
 
@@ -459,28 +498,30 @@
 
                     </div>
                 </div>
+      
+                
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" name="Name" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" email="Email" placeholder="Email" required>
-                            </div>
+                    <form target="_blank" action="https://formsubmit.co/raushan376kumar@gmail.com" method="POST">
+                      <div class="fields">
+                        <div class="field name">
+                          <input type="text" name="name" placeholder="Name" id="name" required>
                         </div>
-                        <div class="field">
-                            <input type="text" name="Subject" placeholder="Subject" required>
+                        <div class="field email">
+                          <input type="email" id="email" name="email" placeholder="Email" required>
                         </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" name="Message" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
+                      </div>
+                      <div class="field">
+                        <input type="text" name="subject" id="sub" placeholder="subject" required>
+                      </div>
+                      <div class="field textarea">
+                        <textarea cols="30" rows="10" id="text" name="message" placeholder="Message.." required></textarea>
+                      </div>
+                      <div class="button-area">
+                        <button type="submit" id="submit">Send message</button>
+                      </div>
                     </form>
-                </div>
+                  </div>
             </div>
         </div>
     </section>

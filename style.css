@@ -36,6 +36,7 @@ section {
   margin: auto;
 }
 .about,
+.experience,
 .services,
 .skills,
 .project,
@@ -968,4 +969,88 @@ footer span a:hover {
     
     
   }
+}
+
+ /* css for experience */
+ .experience {
+  margin: 20px;
+  text-align: center;
+}
+
+.experience .title::after {
+  content: "where i worked";
+}
+.about .about-content .left {
+  width: 45%;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.job-card {
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.job-card img {
+  width: 25%;
+  height: 25%;
+  border-radius: 70%;
+}
+
+.job-details h3 {
+  font-size: 24px;
+  margin: 0 0 5px;
+}
+
+.job-details p {
+  font-size: 26px;
+  color: #888;
+  margin: 0 0 10px;
+}
+
+.job-details h4 {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+.job-details ul {
+  padding: 0;
+  margin: 0;
+}
+
+.job-details li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #353232;
+  margin: 20px 0;
 }
