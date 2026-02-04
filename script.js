@@ -48,8 +48,123 @@ $(document).ready(function () {
     loop: true,
   });
 
-  // owl carousel script
-  $(".carousel").owlCarousel({
+  // owl carousel script for projects
+  $(".project .carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: false,
+      },
+    },
+  });
+
+  // owl carousel script for experience - show only 1 card at a time
+  $(".experience .carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeOut: 4000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 1,
+        nav: false,
+      },
+      1000: {
+        items: 1,
+        nav: false,
+      },
+    },
+  });
+
+  // owl carousel script for skills - 6 items
+  $(".skills .carousel").owlCarousel({
+    margin: 10,
+    loop: true,
+    autoplay: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2,
+        nav: false,
+      },
+      600: {
+        items: 4,
+        nav: false,
+      },
+      1000: {
+        items: 6,
+        nav: false,
+      },
+    },
+  });
+
+  // owl carousel script for education - 4 items
+  $(".services .carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 4,
+        nav: false,
+      },
+    },
+  });
+
+  // owl carousel script for statistics - 6 items
+  $("#staticgit .carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 3,
+        nav: false,
+      },
+      1000: {
+        items: 5,
+        nav: false,
+      },
+    },
+  });
+
+  // owl carousel script for awards - 3 items
+  $("#awards .carousel").owlCarousel({
     margin: 20,
     loop: true,
     autoplay: true,
