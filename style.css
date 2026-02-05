@@ -98,13 +98,13 @@ section .title::after {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
+  background: crimson;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
 
 .navbar.sticky {
   padding: 10px 0;
-  background: crimson;
 }
 
 .navbar .max-width {
@@ -121,7 +121,7 @@ section .title::after {
 }
 
 .navbar .logo a span {
-  color: crimson;
+  color: #fff;
   transition: all 0.3s ease;
 }
 
