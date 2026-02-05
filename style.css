@@ -31,7 +31,7 @@ html {
 
 /* all similar content styling codes */
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .max-width {
@@ -103,7 +103,7 @@ section .title::after {
 }
 
 .navbar.sticky {
-  padding: 15px 0;
+  padding: 10px 0;
   background: crimson;
 }
 
@@ -111,6 +111,7 @@ section .title::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 0;
 }
 
 .navbar .logo a {
@@ -319,9 +320,9 @@ section .title::after {
 }
 
 .awards .title::after {
-  background: #f0f0f0;
+  background: #fff;
   content: "what i achieved";
-  color: #111;
+  color: crimson;
 }
 
 .awards .carousel .card {
@@ -1137,6 +1138,11 @@ footer span a:hover {
   margin-bottom: 30px;
 }
 
+.awards .title::after {
+  content: "what i achieved";
+  background: #fff;
+}
+
 .newbox {
 
   border: 6px solid yellow;
@@ -1317,4 +1323,137 @@ footer span a:hover {
   height: 1px;
   background-color: #353232;
   margin: 20px 0;
+}
+
+/* Toast Notifications */
+#toast-container {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 420px;
+  pointer-events: none;
+}
+
+.toast {
+  position: relative;
+  width: 100%;
+  padding: 18px 24px;
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  animation: toastSlideIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  pointer-events: auto;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toast.success {
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95), rgba(10, 10, 10, 0.98));
+  border-left: 5px solid #00ff88;
+}
+
+.toast.error {
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95), rgba(10, 10, 10, 0.98));
+  border-left: 5px solid crimson;
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.toast i {
+  font-size: 24px;
+}
+
+.toast.success i {
+  color: #00ff88;
+}
+
+.toast.error i {
+  color: crimson;
+}
+
+.toast .message {
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.toast .progress::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: progress 3s linear forwards;
+}
+
+.toast.success .progress::before {
+  background: #00ff88;
+}
+
+.toast.error .progress::before {
+  background: crimson;
+}
+
+@keyframes toastSlideIn {
+  from {
+    transform: translateY(-80px) scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+.toast.fade-out {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.95);
+  transition: all 0.4s ease;
+}
+
+/* Contact Form Validation Styles */
+.contact .contact-content .right form .field input.invalid,
+.contact .contact-content .right form .field textarea.invalid {
+  border: 1px solid crimson !important;
+}
+
+.contact .contact-content .right form .field input.valid {
+  border: 1px solid #00ff88 !important;
 }
