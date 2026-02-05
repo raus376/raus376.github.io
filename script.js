@@ -4,17 +4,13 @@ if ('scrollRestoration' in history) {
 }
 
 $(document).ready(function () {
-  function checkNavbar() {
-    if (window.scrollY > 20) {
+  $(window).scroll(function () {
+    // sticky navbar on scroll script
+    if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
     } else {
       $(".navbar").removeClass("sticky");
     }
-  }
-
-  $(window).scroll(function () {
-    // sticky navbar on scroll script (handles padding/size)
-    checkNavbar();
 
     // scroll-up button show/hide script
     if (this.scrollY > 500) {
@@ -23,9 +19,6 @@ $(document).ready(function () {
       $(".scroll-up-btn").removeClass("show");
     }
   });
-
-  // Initial check on load for padding
-  checkNavbar();
 
   // slide-up script
   $(".scroll-up-btn").click(function () {
@@ -49,9 +42,10 @@ $(document).ready(function () {
   var typed = new Typed(".typing", {
     strings: [
       "Java Full Stack Developer",
-      "2.5+ Year of Experience",
-      "AI Enthusiast",
-      "Proficient in Data Structures & Algorithms"
+      "Spring Boot Microservices Developer",
+      "RESTful API & Backend Engineer",
+      "Angular Full Stack Engineer",
+      "Building Scalable, Secure, and High-Performance Web Applications"
     ],
     typeSpeed: 90,
     backSpeed: 120,
@@ -63,8 +57,7 @@ $(document).ready(function () {
       "Java Full Stack Developer",
       "Secure API Developer",
       "AWS & Cloud-Ready Developer",
-      "Agile Team Collaborator",
-      "Building Scalable, Secure, and High-Performance Web Applications"
+      "Agile Team Collaborator"
     ],
     typeSpeed: 90,
     backSpeed: 120,
@@ -346,8 +339,6 @@ $(document).ready(function () {
             scrollTop: targetPosition
           }, 600);
         }
-        // Ensure navbar reflects "sticky" state after repositioning
-        checkNavbar();
       }
     }
   }
@@ -363,12 +354,10 @@ $(document).ready(function () {
     // Stage 3: On full window load (including images/carousels)
     $(window).on('load', function () {
       performHashScroll(false);
-      checkNavbar(); // Extra safety check
 
       // Stage 4: Safety fallback for dynamic layouts
       setTimeout(function () {
         performHashScroll(false);
-        checkNavbar();
       }, 500);
     });
   }
