@@ -49,10 +49,9 @@ $(document).ready(function () {
   var typed = new Typed(".typing", {
     strings: [
       "Java Full Stack Developer",
-      "Spring Boot Microservices Developer",
-      "RESTful API & Backend Engineer",
-      "Angular Full Stack Engineer",
-      "Building Scalable, Secure, and High-Performance Web Applications"
+      "2.5+ Year of Experience",
+      "AI Enthusiast",
+      "Proficient in Data Structures & Algorithms"
     ],
     typeSpeed: 90,
     backSpeed: 120,
@@ -64,7 +63,8 @@ $(document).ready(function () {
       "Java Full Stack Developer",
       "Secure API Developer",
       "AWS & Cloud-Ready Developer",
-      "Agile Team Collaborator"
+      "Agile Team Collaborator",
+      "Building Scalable, Secure, and High-Performance Web Applications"
     ],
     typeSpeed: 90,
     backSpeed: 120,
