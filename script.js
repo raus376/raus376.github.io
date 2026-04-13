@@ -45,6 +45,7 @@ $(document).ready(function () {
       "Spring Boot Microservices Developer",
       "RESTful API & Backend Engineer",
       "Angular Full Stack Engineer",
+      "AI-Enabled Application Developer",
       "Building Scalable, Secure, and High-Performance Web Applications"
     ],
     typeSpeed: 90,
